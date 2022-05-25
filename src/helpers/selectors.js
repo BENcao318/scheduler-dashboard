@@ -36,5 +36,6 @@ export function getMostPopularDay(state) {
 }
 
 export function getInterviewsPerDay(state) {
+  console.log(state.days)
   return getTotalInterviews(state) / state.days.length || 0;
 }
